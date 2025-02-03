@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 04: CSS Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #333;
+            /* hex color */
+            color: #f9f9f9;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            font-family: "Merriweather";
+        }
+
+        div>p:nth-child(odd) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline CSS -->
+    <h1 style="margin: 0;">This is a heading</h1>
+    <p style="margin: 0;">This is a paragraph</p>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, delectus!</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>
