@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 05: Box Model</title>
+<!--    <style>-->
+<!--        * {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        .menu {-->
+<!--            background-color: #333;-->
+<!--            list-style-type: none;-->
+<!--        }-->
+
+<!--        .menu li {-->
+<!--            display: inline-block;-->
+<!--            padding: 10px;-->
+<!--        }-->
+
+<!--        .menu li:hover {-->
+<!--            background-color: #555;-->
+<!--        }-->
+
+<!--        .menu li:hover a {-->
+<!--            color: yellow;-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+<!--        .menu li a {-->
+<!--            color: white;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--        .d-none {-->
+<!--            display: none !important;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <style>-->
+<!--        html, body {-->
+<!--            height: 100%;-->
+<!--        }-->
+<!--        body {-->
+<!--            background-color: #333333;-->
+<!--            color: black;-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--        }-->
+<!--        label, input {-->
+<!--            display: block;-->
+<!--            width: 100%;-->
+<!--            margin-bottom: 8px;-->
+<!--            padding: 6px 12px;-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+<!--        .login-card {-->
+<!--            max-width: 400px;-->
+<!--            width: 800px;-->
+<!--            padding: 20px;-->
+<!--            background-color: white;-->
+<!--        }-->
+
+<!--        button {-->
+<!--            padding: 6px 12px;-->
+<!--            display: block;-->
+<!--            width: 100%;-->
+<!--            margin-top: 8px;-->
+<!--            background-color: deepskyblue;-->
+<!--            border: none;-->
+<!--        }-->
+
+<!--        img {-->
+<!--            margin: 0 auto;-->
+<!--            display: block;-->
+<!--        }-->
+<!--    </style>-->
+    <style>
+        header, footer {
+            padding: 20px;
+            background-color: deepskyblue;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        aside {
+            width: 30%;
+            float: left;
+        }
+        section {
+            width: 70%;
+            float: left;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 30px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<!--<ul class="menu">-->
+<!--    <li><a href="#">Home</a></li>-->
+<!--    <li class="d-none"><a href="#">About</a></li>-->
+<!--    <li><a href="#">Contact</a></li>-->
+<!--</ul>-->
+<!--<div class="login-card">-->
+<!--<form action="/login.php" method="post">-->
+<!--    <img src="./images/CodeGym-Logo.webp" alt="">-->
+<!--    <label for="username">Username</label>-->
+<!--    <input type="text" name="username" id="username" placeholder="Enter username">-->
+<!--    <label for="password">Password</label>-->
+<!--    <input type="password" name="password" id="password" placeholder="Enter password">-->
+<!--    <a href="#">Forget password?</a>-->
+<!--    <button type="submit">Login</button>-->
+<!--</form>-->
+
+<!--</div>-->
+<header>Logo</header>
+<nav>
+    <ul class="clearfix">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<main>
+<aside>
+    <h2>Popular posts</h2>
+    <ul>
+        <li><a href="#">Post 1</a></li>
+        <li><a href="#">Post 2</a></li>
+        <li><a href="#">Post 3</a></li>
+    </ul>
+</aside>
+<section>
+    <h1>Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam aspernatur atque autem
+        consectetur consequatur cumque, delectus doloremque doloribus ducimus ea eius eligendi eos error est eum
+        exercitationem explicabo facere fugiat harum id impedit in incidunt ipsa iure laborum laudantium magnam
+        molestias natus nemo neque nihil nisi nobis non numquam obcaecati odit officiis optio pariatur perspiciatis
+        placeat porro possimus praesentium quae quas quia quidem quisquam quo ratione recusandae rem repellendus
+        repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde
+        voluptas voluptate voluptates voluptatum. Adipisci alias amet aperiam aspernatur atque autem consectetur
+        consequatur cumque, delectus doloremque doloribus ducimus ea eius eligendi eos error est eum exercitationem
+        explicabo facere fugiat harum id impedit in incidunt ipsa iure laborum laudantium magnam molestias natus nemo
+        neque nihil nisi nobis non numquam obcaecati odit officiis optio pariatur perspiciatis placeat porro possimus
+        praesentium quae quas quia quidem quisquam quo ratione recusandae rem repellendus repudiandae rerum saepe
+        sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde voluptas voluptate
+        voluptates voluptatum.</p>
+</section>
+    <div class="clearfix"></div>
+</main>
+<footer>&copy Copyright 2025.</footer>
+</body>
+</html>
