@@ -1,0 +1,74 @@
+/*body {*/
+/*    background-color: white;*/
+/*}*/
+/*@media {*/
+/*    body {*/
+/*        font-size: 2rem;*/
+/*    }*/
+/*}*/
+/*@media only screen {*/
+/*    body {*/
+/*        color: yellow;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 600px) {*/
+/*    body {*/
+/*        background-color: blue;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 500px) {*/
+/*    body {*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header, .footer {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+.sidebar {
+    width: 25%;
+    height: 300px;
+    background-color: lightblue;
+    float: left;
+    padding: 20px;
+}
+.content {
+    width: 75%;
+    height: 300px;
+    float: left;
+    background-color: lightgreen;
+    padding: 20px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-1 {
+    width: 8.33%;
+}
+
+/* Attribute selector */
+/* ^: start with ...*/
+/* *: contain */
+/* $: end with ...*/
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+
+.col-3 {
+    width: 25%;
+    background-color: lightblue;
+}
+.col-9 {
+    width: 75%;
+    background-color: lightgreen;
+}
