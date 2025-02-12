@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*<!--   inline, internal, external     -->*/
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "menu main right"
+                "menu footer footer";
+            grid-template-columns: 250px 1fr 250px;
+            grid-template-rows: 100px 1fr 100px;
+            height: 100vh;
+        }
+
+        .header,
+        .menu,
+        .main,
+        .right,
+        .footer {
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        .header {
+            grid-area: header;
+            background: lightgreen;
+            text-align: center;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: lightblue;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: lightcoral;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: lightgray;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgreen;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>My Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cupiditate dolor distinctio voluptate
+                quod quaerat, dolorem error. Esse, praesentium, enim laborum qui optio libero adipisci, mollitia animi
+                dolorem odit doloribus.</p>
+        </div>
+        <div class="menu">Menu</div>
+        <div class="main">Main Content</div>
+        <div class="right">Right Sidebar</div>
+        <div class="footer">&copy; Copyright 2025. All right reversed.</div>
+    </div>
+</body>
+
+</html>
