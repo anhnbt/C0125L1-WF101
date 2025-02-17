@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  /* align-content: flex-end; */
+  background-color: lightgray;
+  height: 500px;
+  /* row */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.item2 {
+  align-self: center;
+}
+
+.item3 {
+  align-self: flex-end;
+}

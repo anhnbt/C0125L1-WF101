@@ -1,0 +1,58 @@
+// SASS version 3.0
+@use "reset" as r;
+@use "variables" as v;
+@use "container" as c;
+@use "header" as h;
+@use "footer" as f;
+
+@mixin base-button {
+  border: none;
+  background-color: v.$color-primary;
+  color: v.$font-color;
+  padding: 6px 12px;
+}
+
+%alert {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  color: #333;
+}
+
+body {
+  color: v.$color-primary;
+  font-family: v.$font;
+  font-size: v.$font-size;
+}
+
+nav {
+  background-color: #333;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.btn-primary {
+  @include base-button();
+  background-color: v.$color-secondary;
+  color: #333;
+}
+.btn-warning {
+  @include base-button();
+  background-color: v.$color-warning;
+  color: #333;
+}
+.alert-success {
+  @extend %alert;
+  background-color: v.$color-secondary;
+}
+.alert-warning {
+  @extend %alert;
+  background-color: v.$color-warning;
+}
