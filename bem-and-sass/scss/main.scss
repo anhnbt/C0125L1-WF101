@@ -1,0 +1,52 @@
+/* BEM */
+// B: Block
+// E: Element
+// M: Modifier
+
+@use 'reset' as r;
+@use 'variables' as v;
+
+@mixin menu-link {
+  display: inline-block;
+  padding: v.$spacing-x v.$spacing-y;
+  color: v.$color-white;
+  text-decoration: none;
+}
+
+.nav {
+  background-color: v.$color-dark;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @include menu-link();
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__list-item {
+    display: inline;
+
+    a {
+      @include menu-link();
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// .hero__image
+//   .hero_title
+//   .....
+
+// .card {
+//   .card__list
+//   .card__image
+//   .card__title
+//   .card__description
+//   .card__button-warning
+// }
